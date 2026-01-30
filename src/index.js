@@ -898,5 +898,5 @@ app.delete('/mcp', (req, res) => {
 app.listen(PORT, () => {
   console.log(`GitHub MCP Server running on port ${PORT}`);
   console.log(`MCP endpoint: http://localhost:${PORT}/mcp`);
-  console.log(`Token configured: ${!!GITHUB_TOKEN}`);
+  console.log(`Token configured: ${!!getGithubToken()}`);
 });
